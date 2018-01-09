@@ -23,4 +23,7 @@ v.) download_files.pl
 
 A Perl script to download files from nse.co.ke
 
+vi.) read_pdfs.pl
+
+A little Perl script to convert the pdfs to txt with 'pdftotext'.
 
