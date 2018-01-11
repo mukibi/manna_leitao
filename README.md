@@ -27,5 +27,9 @@ vi.) read_pdfs.pl
 
 A little Perl script to convert the pdfs to txt with 'pdftotext'.
 
-vii.) proc_prose
+vii.) proc_prose.pl
 A Perl script to convert our PDFs to CSVs.
+
+viii.) proc_excel.pl
+
+Standardize the Excel spreadsheets to CSVs with the following columns: company_name,high price,low proce,close/average price,previous price,number shares
