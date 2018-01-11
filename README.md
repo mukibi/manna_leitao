@@ -27,3 +27,5 @@ vi.) read_pdfs.pl
 
 A little Perl script to convert the pdfs to txt with 'pdftotext'.
 
+vii.) proc_prose
+A Perl script to convert our PDFs to CSVs.
