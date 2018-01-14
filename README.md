@@ -33,3 +33,12 @@ A Perl script to convert our PDFs to CSVs.
 viii.) proc_excel.pl
 
 Standardize the Excel spreadsheets to CSVs with the following columns: company_name,high price,low proce,close/average price,previous price,number shares
+
+ix.) get_adjusted_prices.pl
+
+Find share dilution from price list Excel sheets
+
+x.) dilution.csv.bz2
+
+A CSV of the share dilution for each stock over time
+
