@@ -42,3 +42,11 @@ x.) dilution.csv.bz2
 
 A CSV of the share dilution for each stock over time
 
+xi.)group_actions_by_type_year.pl
+Group corporate actions by type (dividend, share split, bonus, rights issue) and year.
+
+xii.) plot_actions_over_time.pl
+Plot the number of corporate actions of each type over the last 15 years.
+
+
+
