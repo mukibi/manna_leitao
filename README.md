@@ -56,5 +56,9 @@ xiv.) friday_observed_expected.csv.bz2
 
 Expected and observed values for the Friday/price correlation in the form: Year,Expected Value,Highest count,2nd-highest count,3rd-highest count,4th-highest count,lowest count.
 
+xv.) calc_chi_square.py
+
+Calculate the Chi-square with scipy.stats
+
 
 
