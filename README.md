@@ -58,7 +58,19 @@ Expected and observed values for the Friday/price correlation in the form: Year,
 
 xv.) calc_chi_square.py
 
-Calculate the Chi-square with scipy.stats
+Calculate the Chi-square with scipy.stats for Friday
+
+xvi.) calc_chi_square2.py
+
+Calculate the Chi-square with scipy.stats for Monday
+
+xvii.) check_week_corr2.pl
+
+Get Observed/expected trades for Monday
+
+xviii.) monday_observed_expected.csv.bz2
+Expected/Observed trade data for Monday in the format: year,expected value,number highest,number 2nd highest,number 3rd highest, number 4th highest,lowest
+
 
 
 
