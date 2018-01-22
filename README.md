@@ -71,6 +71,6 @@ Get Observed/expected trades for Monday
 xviii.) monday_observed_expected.csv.bz2
 Expected/Observed trade data for Monday in the format: year,expected value,number highest,number 2nd highest,number 3rd highest, number 4th highest,lowest
 
+xix.) calc_weekday_price_deltas.pl
 
-
-
+Calculate the average margin between the average price for the week and the price on each weekday.
