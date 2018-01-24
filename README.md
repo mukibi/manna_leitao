@@ -74,3 +74,8 @@ Expected/Observed trade data for Monday in the format: year,expected value,numbe
 xix.) calc_weekday_price_deltas.pl
 
 Calculate the average margin between the average price for the week and the price on each weekday.
+
+xx.) apply_adjustment.pl
+
+Apply price adjustment. Reads the dilution factor from dilution.csv and writes CSVs in the format: stock,high price,low price,average price/closing price,previous price,number shares,corrected price.
+The 'corrected price' is determined by: (current number of shares/number of shares in 2001) * current price 
