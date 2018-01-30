@@ -89,7 +89,7 @@ for my $action ( sort { $a cmp $b } keys %actions ) {
 	$gnuplot_data .= "e\n";
 	$gnuplot_code .= 
 qq%
-set label '$action' tc rgb '$color_palette[$color_cntr]' at 5,$y_loc;\\
+set label '$action' tc rgb '$color_palette[$color_cntr]' at 2010,$y_loc;\\
 plot '-' using 1:2 notitle with linespoints linecolor rgb '$color_palette[$color_cntr]' linewidth 3;\\
 %;
 	$color_cntr++;

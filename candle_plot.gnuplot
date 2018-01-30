@@ -1,10 +1,10 @@
 set terminal png size 1000,1000;
 set output 'month_day.png';
 set title 'Day of Month Returns';
-set xlabel 'Year';
-set ylabel 'Return Delta %';
-set xrange [2001:2017];
-set yrange [*:*];
+set xlabel 'Day of the Month';
+set ylabel 'Return Delta';
+set xrange [1:31];
+set yrange [-10:10];
 set ytics;
 set grid ytics;
 set grid xtics;
@@ -13,5 +13,5 @@ set bmargin at screen 0.1;
 set rmargin at screen 0.98;
 set lmargin at screen 0.08;
 set datafile separator ',';
-plot 'candle_data.csv' using 1:2:4:3:5 notitle with candlesticks;
+plot 'candle_data.csv' using 1:2:3:4:5 notitle with candlesticks;
 

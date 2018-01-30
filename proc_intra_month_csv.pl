@@ -14,7 +14,7 @@ while (<$f>) {
 
 		my @bts = split/,/,$_;
 		for (my $i = 1; $i <= $#bts; $i++ ) {
-			$data{$bts[$i]} = {"low" => 0, "high" => 0, "close" => 0};
+			$data{$bts[$i]} = {"low" => 0, "high" => 0, "avg" => 0, "open" => 0, "close" => 0};
 		}
 
 	}
@@ -46,17 +46,30 @@ while (<$f>) {
 		my @bts = split/,/,$_;
 		for (my $i = 1; $i <= $#bts; $i++ ) {
 			if (exists $data{$i}) {
-				$data{$i}->{"close"}  = $bts[$i];
+				$data{$i}->{"avg"}  = $bts[$i];
 			}
 		}
 
 	}
+
+	if ($_ =~ /Std Dev,/) {
+
+		my @bts = split/,/,$_;
+		for (my $i = 1; $i <= $#bts; $i++ ) {
+			if (exists $data{$i}) {
+				$data{$i}->{"open"}  = $data{$i}->{"avg"} - $bts[$i];
+				$data{$i}->{"close"} = $data{$i}->{"avg"} + $bts[$i];
+			}
+		}
+
+	}
+
 	#print $_, $/;
 
 }
 
 for my $day ( sort { $a <=> $b } keys %data ) {
-	print qq!$day,$data{$day}->{"low"},$data{$day}->{"low"},$data{$day}->{"high"},$data{$day}->{"close"}\n!;
+	print qq!$day,$data{$day}->{"open"},$data{$day}->{"low"},$data{$day}->{"high"},$data{$day}->{"close"}\n!;
 }
 
 #print join(", ", keys %data), $/;
